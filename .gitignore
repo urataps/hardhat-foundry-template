@@ -18,3 +18,15 @@ yarn.lock
 !broadcast
 broadcast/*
 broadcast/*/31337/
+
+
+# Hardhat files
+/cache_hardhat
+/artifacts
+
+# TypeChain files
+/typechain*
+
+# solidity-coverage files
+/coverage
+/coverage.json
