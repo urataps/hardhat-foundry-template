@@ -5,7 +5,7 @@ import { vars } from "hardhat/config";
 import { NetworkUserConfig } from "hardhat/types";
 
 const mnemonic: string = vars.get("MNEMONIC");
-const infuraApiKey: string = vars.get("INFURA_API_KEY");
+const infuraApiKey: string = vars.get("API_KEY_INFURA");
 
 const chainIds = {
   "arbitrum-mainnet": 42161,
@@ -50,13 +50,6 @@ const config: HardhatUserConfig = {
         mnemonic,
       },
       chainId: chainIds.hardhat,
-    },
-    ganache: {
-      accounts: {
-        mnemonic,
-      },
-      chainId: chainIds.ganache,
-      url: "http://localhost:8545",
     },
     arbitrum: getChainConfig("arbitrum-mainnet"),
     avalanche: getChainConfig("avalanche"),
