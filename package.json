@@ -28,8 +28,10 @@
     "template"
   ],
   "scripts": {
-    "clean": "rm -rf cache out",
-    "compile": "forge build",
+    "clean": "rm -rf cache out artifacts cache_hardhat",
+    "compile": "bun run compile:hh && bun run compile:forge",
+    "compile:forge": "forge build",
+    "compile:hh": "bun run hardhat compile",
     "lint": "bun run lint:sol && bun run prettier:check",
     "lint:sol": "forge fmt --check && bun solhint {script,src,test}/**/*.sol",
     "prettier:check": "prettier --check **/*.{json,md,yml} --ignore-path=.prettierignore",
