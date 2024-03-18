@@ -109,4 +109,4 @@ Inspiration drawn from PaulRBerg's [Foundry Template](https://github.com/paulRBe
 
 ## License
 
-MIT License © 2024 Alexe Spataru. Explore the [LICENSE](./LICENSE) for more information.
+MIT License © 2024 @urataps. Explore the [LICENSE](./LICENSE) for more information.

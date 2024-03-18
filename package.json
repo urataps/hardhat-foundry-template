@@ -3,7 +3,7 @@
   "description": "Hybrid Foundry & Hardhat template for developing Solidity smart contracts",
   "version": "1.0.0",
   "author": {
-    "name": "Alexe Luca Spataru",
+    "name": "urataps",
     "url": "https://github.com/urataps"
   },
   "dependencies": {
